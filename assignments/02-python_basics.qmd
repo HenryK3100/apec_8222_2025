@@ -12,6 +12,11 @@ a). **Indentation and Pythonic Code**:
 
 ```{python}
 #1 a) Answer
+def print_numbers():
+   for i in range(1, 11):
+      print(i)
+
+print_numbers()
 ```
 
 b.) **Rules of Functions and Comments**:
@@ -19,6 +24,15 @@ b.) **Rules of Functions and Comments**:
 
 ```{python}
 #1 b) Answer:
+def calculate_area(length, width):
+   """Returns the area of a rectangle"""
+   rectangle_area = length * width
+   return rectangle_area
+
+# Example
+rectangle = calculate_area(5, 3)
+print(rectangle)
+
 ```
 
 c.) **Basic Data Types**:
@@ -26,6 +40,9 @@ c.) **Basic Data Types**:
 
 ```{python}
 #1 c) Answer:
+is_active = True
+
+print(type(is_active))
 ```
 
 d.) **Working with Lists**:
@@ -33,6 +50,11 @@ d.) **Working with Lists**:
 
 ```{python}
 #1 d) Answer:
+fruits = ["apple", "watermelon", "banana", "cantoloupe"]
+
+fruits.append("mango")
+
+print(fruits)
 ```
 
 ## Question 2:
@@ -41,6 +63,8 @@ a.) **Naming Conventions**:
 
 ```{python}
 #2 a) Answer: 
+
+number_days_in_week = 7
 ```
 
 b.) **Control Flows - Conditionals**:
@@ -48,6 +72,18 @@ b.) **Control Flows - Conditionals**:
 
 ```{python}
 #2 b) Answer:
+
+number = 0.45 #example value
+
+if number > 0:
+   number_check = "positive"
+elif number == 0:
+   number_check = "zero"
+else:
+   number_check = "negative"
+
+print(f"The number is {number_check}")
+
 ```
 
 c.) **Control Flows - Loops**:
@@ -55,13 +91,24 @@ c.) **Control Flows - Loops**:
 
 ```{python}
 #2 c) Answer:
+total = 0
+for i in range(1, 101):
+   total +=i
+
+print(total)
 ```
 
 d.) **Control Flows - Loop Control Statements**:
    - Modify the loop from the previous sub-question to stop the loop if the sum becomes greater than 1000 using a `break` statement.
 
 ```{python}
-#2 c) Answer: 
+#2 d) Answer: 
+total = 0
+for i in range(1, 101):
+   total +=i
+   if total > 1000:
+      break #breaks at 45, because this eclipses 1000
+print(total)
 ```
 
 e.) **Functions - Arguments and Return Values**:
@@ -69,6 +116,14 @@ e.) **Functions - Arguments and Return Values**:
 
 ```{python}
 #2 e) Answer:
+
+def get_full_name(first_name, last_name):
+   full_name = f"{first_name} {last_name}"
+   return(full_name)
+
+#Example
+print(get_full_name("Henry", "Kombol"))
+
 ```
 
 ## Question 3
@@ -84,6 +139,13 @@ def function_name(variable_name):
 
 ```{python}
 #3A Answer
+def squared_calc(x):
+   num_sum = 0
+   for i in range(1, x + 1):
+      num_sum += i**2
+   return(num_sum)
+
+print(squared_calc(20))
 ```
 
 The python library named "os" is a built-in library for dealing with any file on your operating system.
@@ -95,12 +157,18 @@ write "import os" to import the library into your code before you can use it:
 
 ```{python}
 #3B Answer
+import os
+
+files = os.listdir('/Users/henrykombol/Desktop/apec_8222/apec_8222_henry')
+print(files)
 ```
 
 **Part C:** Using a FOR loop, iterate over the list from above. Using the function len(), count how many letters there are in the filenames. HINT just like in real life, you may need to google the len() function and see how it work on e.g. strings.
 
 ```{python}
 #3C Answer
+for i in files:
+   print(len(i))
 ```
 
 **Part D:** Write a Python program which iterates over the integers from 1 to 50. For multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz". Hint: look up how to use the modulo operator (which is written as % in python) which would let you test when the remainder of a devision is exactly 0.
@@ -109,6 +177,15 @@ Side-note, this is a hilariously over-used question that most software engineers
 
 ```{python}
 # 3D Answer
+for i in range(1, 51):
+   if i % 5 == 0 and i % 3 ==0:
+      print("FizzBuzz")
+   elif i % 5 == 0:
+      print("Buzz")
+   elif i % 3 == 0:
+      print("Fizz")
+   else:
+      print(i)
 ```
 
 ## Question 4
