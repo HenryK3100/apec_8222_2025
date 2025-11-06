@@ -1,3 +1,10 @@
+---
+title: "Assignment 2"
+author: "Henry Kombol"
+format: pdf
+---
+
+
 # Assignment 2: Python Basics and GitHub Pages Website
 
 For this assignment, see the QMD or IPYNB files in our course repository named 02-python_basics.qmd or 02-python_basics.ipynb.
@@ -191,6 +198,8 @@ for i in range(1, 51):
 ## Question 4
 
 Create a personal website using GitHub Pages. The website should be just a few pages, including a landing page, a research page, and a contact page. Use Markdown to format the content on your pages. Include links to your GitHub profile and any relevant projects or repositories you have worked on. Once completed, share the link to your GitHub Pages website here. Note, for the pages to actually be hosted online, you will need to create a new repository named <your_github_username>.github.io and push your quarto-rendered markdown files there. See GitHub Pages documentation for more details.
+
+github website link: https://henryk3100.github.io/
 
 ### Hint 1
 
